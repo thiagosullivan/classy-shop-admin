@@ -15,3 +15,38 @@
 .MuiMenu-paper .MuiMenu-list {
   padding: 20px;
 }
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
+
+/* table */
+.table-container {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-header {
+  background: #f3f4f6;
+}
+
+.table-row:hover {
+  background: #f9fafb;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}

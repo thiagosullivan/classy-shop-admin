@@ -11,12 +11,14 @@ function App() {
       exact: true,
       element: (
         <>
-          <section className="main">
+          <section className="main bg-[#f1f1f1]">
             <Header />
             <div className="contentMain flex">
-              <div className="sidebarWrapper w-[20%]">
-                {/* <Dashboard /> */}
+              <div className="sidebarWrapper w-[15%]">
                 <Sidebar />
+              </div>
+              <div className="contentRight py-4 px-5 w-[80%]">
+                <Dashboard />
               </div>
             </div>
           </section>
