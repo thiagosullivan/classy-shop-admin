@@ -1,9 +1,32 @@
-import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import "./App.css";
+import { Dashboard } from "./Pages/Dashboard";
+import { Header } from "./components/Header";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      exact: true,
+      element: (
+        <>
+          <section className="main">
+            <Header />
+            <div className="contentMain flex">
+              <div className="sidebarWrapper w-[20%]">
+                {/* <Dashboard /> */}
+                <Sidebar />
+              </div>
+            </div>
+          </section>
+        </>
+      ),
+    },
+  ]);
   return (
     <>
-      <h1 className="text-2xl text-red-600">Hello world</h1>
+      <RouterProvider router={router} />
     </>
   );
 }

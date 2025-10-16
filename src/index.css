@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #ff4061;
+}
+
+.MuiBadge-root .MuiBadge-badge {
+  background-color: #ff4061;
+}
+
+.MuiMenu-paper {
+  border-radius: 12px !important;
+}
+
+.MuiMenu-paper .MuiMenu-list {
+  padding: 20px;
+}
