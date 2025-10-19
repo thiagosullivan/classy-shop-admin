@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Dashboard } from "./Pages/Dashboard";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
+import { LoginPage } from "./Pages/Login";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,11 @@ function App() {
           </section>
         </>
       ),
+    },
+    {
+      path: "/login",
+      exact: true,
+      element: <LoginPage />,
     },
   ]);
   return (
