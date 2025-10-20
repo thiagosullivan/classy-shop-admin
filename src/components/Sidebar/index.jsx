@@ -104,7 +104,7 @@ export const Sidebar = () => {
                 </Link>
               </li>
               <li className="w-full text-sm">
-                <Link to="/produt/upload">
+                <Link to="/product/upload">
                   <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
                     Product Upload
                   </Button>
