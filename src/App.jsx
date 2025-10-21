@@ -12,6 +12,8 @@ import { CategoryList } from "./Pages/CategoryList";
 import { SubCategoryList } from "./Pages/SubCategoryList";
 import { SubCategoryUpload } from "./Pages/SubCategoryUpload";
 import { Users } from "./Pages/Users";
+import { ForgotPasswordPage } from "./Pages/ForgotPassword";
+import { ChangePasswordPage } from "./Pages/ChangePassword";
 
 function App() {
   const router = createBrowserRouter([
@@ -209,6 +211,16 @@ function App() {
           </section>
         </>
       ),
+    },
+    {
+      path: "/forgot-password",
+      exact: true,
+      element: <ForgotPasswordPage />,
+    },
+    {
+      path: "/change-password",
+      exact: true,
+      element: <ChangePasswordPage />,
     },
   ]);
   return (
