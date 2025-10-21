@@ -11,6 +11,7 @@ import { CategoryUpload } from "./Pages/CategoryUpload";
 import { CategoryList } from "./Pages/CategoryList";
 import { SubCategoryList } from "./Pages/SubCategoryList";
 import { SubCategoryUpload } from "./Pages/SubCategoryUpload";
+import { Users } from "./Pages/Users";
 
 function App() {
   const router = createBrowserRouter([
@@ -165,6 +166,25 @@ function App() {
               </div>
               <div className="contentRight py-4 px-5 w-[80%]">
                 <SubCategoryList />
+              </div>
+            </div>
+          </section>
+        </>
+      ),
+    },
+    {
+      path: "/users",
+      exact: true,
+      element: (
+        <>
+          <section className="main bg-[#f1f1f1]">
+            <Header />
+            <div className="contentMain flex">
+              <div className="sidebarWrapper w-[15%]">
+                <Sidebar />
+              </div>
+              <div className="contentRight py-4 px-5 w-[80%]">
+                <Users />
               </div>
             </div>
           </section>
