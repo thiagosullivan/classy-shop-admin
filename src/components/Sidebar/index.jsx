@@ -58,14 +58,18 @@ export const Sidebar = () => {
           <Collapse isOpened={submenuIndex === 1 ? true : false}>
             <ul className="w-full pl-4">
               <li className="w-full text-sm">
-                <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
-                  Home Banners List
-                </Button>
+                <Link to="/banners">
+                  <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
+                    Home Banners List
+                  </Button>
+                </Link>
               </li>
               <li className="w-full text-sm">
-                <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
-                  Add Home Banner Slide
-                </Button>
+                <Link to="/banners/upload">
+                  <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
+                    Add Home Banner Slide
+                  </Button>
+                </Link>
               </li>
             </ul>
           </Collapse>
