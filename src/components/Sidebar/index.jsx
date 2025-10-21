@@ -143,21 +143,21 @@ export const Sidebar = () => {
                 </Link>
               </li>
               <li className="w-full text-sm">
-                <Link to="/category/add">
+                <Link to="/categories/upload">
                   <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
                     Add a Category
                   </Button>
                 </Link>
               </li>
               <li className="w-full text-sm">
-                <Link to="/category/subcategory">
+                <Link to="/categories/subcategory">
                   <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
                     Sub Category List
                   </Button>
                 </Link>
               </li>
               <li className="w-full text-sm">
-                <Link to="/category/subcategory/add">
+                <Link to="/categories/subcategory/upload">
                   <Button className="!text-[rgba(0,0,0,0.8)] !capitalize !justify-start !w-full">
                     Add a Sub Category
                   </Button>

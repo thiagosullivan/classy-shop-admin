@@ -7,6 +7,10 @@ import { LoginPage } from "./Pages/Login";
 import { ProductsPage } from "./Pages/Products";
 import { ProductUpload } from "./Pages/ProductUpload";
 import { HomeSliderBanners } from "./Pages/HomeSliderBanners";
+import { CategoryUpload } from "./Pages/CategoryUpload";
+import { CategoryList } from "./Pages/CategoryList";
+import { SubCategoryList } from "./Pages/SubCategoryList";
+import { SubCategoryUpload } from "./Pages/SubCategoryUpload";
 
 function App() {
   const router = createBrowserRouter([
@@ -104,6 +108,82 @@ function App() {
               </div>
               <div className="contentRight py-4 px-5 w-[80%]">
                 <HomeSliderBanners />
+              </div>
+            </div>
+          </section>
+        </>
+      ),
+    },
+    {
+      path: "/categories",
+      exact: true,
+      element: (
+        <>
+          <section className="main bg-[#f1f1f1]">
+            <Header />
+            <div className="contentMain flex">
+              <div className="sidebarWrapper w-[15%]">
+                <Sidebar />
+              </div>
+              <div className="contentRight py-4 px-5 w-[80%]">
+                <CategoryList />
+              </div>
+            </div>
+          </section>
+        </>
+      ),
+    },
+    {
+      path: "/categories/upload",
+      exact: true,
+      element: (
+        <>
+          <section className="main bg-[#f1f1f1]">
+            <Header />
+            <div className="contentMain flex">
+              <div className="sidebarWrapper w-[15%]">
+                <Sidebar />
+              </div>
+              <div className="contentRight py-4 px-5 w-[80%]">
+                <CategoryUpload />
+              </div>
+            </div>
+          </section>
+        </>
+      ),
+    },
+    {
+      path: "/categories/subcategory",
+      exact: true,
+      element: (
+        <>
+          <section className="main bg-[#f1f1f1]">
+            <Header />
+            <div className="contentMain flex">
+              <div className="sidebarWrapper w-[15%]">
+                <Sidebar />
+              </div>
+              <div className="contentRight py-4 px-5 w-[80%]">
+                <SubCategoryList />
+              </div>
+            </div>
+          </section>
+        </>
+      ),
+    },
+    {
+      path: "/categories/subcategory/upload",
+      exact: true,
+      element: (
+        <>
+          <section className="main bg-[#f1f1f1]">
+            <Header />
+            <div className="contentMain flex">
+              <div className="sidebarWrapper w-[15%]">
+                <Sidebar />
+              </div>
+              <div className="contentRight py-4 px-5 w-[80%]">
+                <SubCategoryUpload />
               </div>
             </div>
           </section>
